@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+# ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
@@ -8,6 +8,7 @@ gem 'rails', '4.1.1'
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '>= 2.13.1'
+  require "capybara/rspec"
 end
 
 group :test do
@@ -40,7 +41,7 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
-require "capybara/rspec"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
