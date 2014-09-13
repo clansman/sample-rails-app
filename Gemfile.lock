@@ -215,7 +215,8 @@ DEPENDENCIES
   guard-spork
   jbuilder (~> 2.0)
   jquery-rails
-  pg (= 0.15.1)
+  minitest
+  pg
   rails (= 4.1.1)
   rails_12factor (= 0.0.2)
   rb-readline
